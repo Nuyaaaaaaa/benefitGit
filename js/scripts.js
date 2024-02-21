@@ -8,16 +8,14 @@ $(window).on("scroll", function () {
       $(".header-wrap").removeClass("active");
     }
    // мобильное меню
-$('.menu-humb').on('click', function () {
-  $(this).toggleClass('active');
-  $('.menu-mob').toggleClass('active');
-  $('.header-wrap').toggleClass('menu_active');
+$('.menu-humb__wrap').on('click', function () {
+  $('.menu-humb').addClass('active');
+  $('.menu-mob').addClass('active');
+  $('.header-wrap').addClass('menu_active');
 });
 //close mob menu
-$("#btn-close").click(function(){
+$("#btn-close").on('click', function() {
   $('.menu-mob').removeClass('active');
   $('.header-wrap').removeClass('menu_active');
-  $("#menu-mob").hide();
-
 })
 });
