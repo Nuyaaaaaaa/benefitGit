@@ -557,7 +557,7 @@ nav ul li:hover>ul {
 }
 
 .card {
-    margin-bottom: 50px;
+    margin-bottom: 90px;
 }
 
 .adress {
@@ -569,6 +569,7 @@ nav ul li:hover>ul {
 
 .information__wrap {
     display: flex;
+    justify-content: space-between;
 }
 
 .information {
@@ -594,6 +595,19 @@ nav ul li:hover>ul {
 .information__blockFirst {
     display: flex;
     flex-direction: column;
+
+}
+
+.information__blockSecond {
+    margin-bottom: 70px;
+    display: grid;
+    grid-template-columns: 115px 402px 40px
+}
+
+.information__text {
+    line-height: 25px;
+    font-size: 16px;
+    font-family: var(--600-);
 }
 
 .video {
@@ -1134,15 +1148,33 @@ nav ul li:hover>ul {
         font-size: 16px;
     }
 
+
     .footer-logo__block {
         flex-direction: row-reverse;
+        align-items: center;
+        grid-column: span 2;
+        justify-content: start;
+        order: 1;
+    }
+
+    .footer_nav {
+        order: 2;
+    }
+
+    .footer_contact {
+        order: 3;
+    }
+
+    .footer_adress {
+        order: 4;
     }
 
     .footer__inner {
-        flex-direction: column;
-        padding: 0 64px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
     }
-
+    
     .help-form {
         padding: 0 40px;
     }
@@ -1203,13 +1235,13 @@ nav ul li:hover>ul {
         height: 700px;
     }
 
-    
+
 
     .menu-mob__btn-close {
         position: absolute;
         top: 8px;
-        right: 3px;
-        font-size: 20px;
+        right: 16px;
+        font-size: 25px;
     }
 
     .under-header__containerSecond {
@@ -1250,6 +1282,33 @@ nav ul li:hover>ul {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 30px;
+    }
+
+    .information__wrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .information-title {
+        line-height: 30px;
+        font-size: 25px;
+    }
+
+    .information-description {
+        line-height: 20px;
+        font-size: 14px;
+    }
+
+    .information-btn {
+        margin-bottom: 50px;
+    }
+
+    .information__dots {
+        display: none;
+    }
+
+    .information__blockSecond {
+        grid-template-columns: 1fr 1fr;
     }
 
 }
