@@ -351,6 +351,7 @@ nav ul li:hover>ul {
     font-size: 14px;
     font-weight: 400;
     font-family: var(--400-);
+    white-space: nowrap;
 }
 
 
@@ -774,7 +775,7 @@ nav ul li:hover>ul {
 
 .under-header__second {
     background-image: url(../img/tamozennaya-ochistka.jpeg);
-    padding: 350px 0 237px;
+    padding: 97px 0 237px;
     position: relative;
     overflow: hidden;
     background-position: center;
@@ -903,6 +904,30 @@ nav ul li:hover>ul {
 .menu-mob {
     display: none;
 }
+
+.under-header__containerSecond {
+    display: flex;
+    justify-content: space-between;
+    width: 1160px;
+    margin: 0 auto;
+
+}
+
+.under-header__titleSecond {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: var(--main-white);
+    font-family: var(--700-);
+}
+
+.under-header__descriptionSecond {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--main-white);
+    font-family: var(--400-);
+    width: 60%;
+}
+
 
 @media screen and (max-width: 600px) {
     .container {
@@ -1172,7 +1197,41 @@ nav ul li:hover>ul {
         position: absolute;
         top: 8px;
         right: 3px;
-       font-size: 20px;
+        font-size: 20px;
+    }
+
+    .under-header__containerSecond {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 600px;
+        flex-direction: column;
+        padding: 66px;
+    }
+
+    .under-header__titleSecond {
+        font-size: 25px;
+        line-height: 31px;
+    }
+
+    .under-header__descriptionSecond {
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--main-white);
+        font-family: var(--400-);
+        line-height: 22px;
+    }
+
+    .under-header__tile {
+        display: none;
+    }
+
+    .under-header__input-block {
+        display: none;
+    }
+
+    .under-header__block-main {
+        display: none;
     }
 
 }
