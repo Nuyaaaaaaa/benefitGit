@@ -1171,7 +1171,7 @@ nav ul li:hover>ul {
 
     .footer__inner {
         display: grid;
-        grid-template-columns: 1fr 5fr;
+        grid-template-columns: 1fr 1fr;
         gap: 30px;
     }
     
@@ -1308,7 +1308,7 @@ nav ul li:hover>ul {
     }
 
     .information__blockSecond {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 5fr;
     }
 
 }
